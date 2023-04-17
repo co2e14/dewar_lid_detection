@@ -61,7 +61,7 @@ def main():
     result = find_coordinates(image)
     if result is not None:
         x, y = result
-        print(f'The coordinates of the dark circle center relative to the fiducial marker are: ({x}, {y})')
+        print(f'The coordinates of the dewar hole relative to the fiducial marker are: ({x}, {y})')
 
         # Draw crosshair in the middle of the dark inner circle
         circle_center = (x + find_fiducial_marker(image)[0], y + find_fiducial_marker(image)[1])
